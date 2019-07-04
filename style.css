@@ -1,0 +1,133 @@
+/*css stylesheet for saarbuckle personal website- July 2019*/
+
+body {
+	font-size: 100%;
+	background-color: #f0f0f0;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+.onecol #container { 
+	width: 900px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #f0f0f0;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.onecol #header { 
+	background: #f0f0f0; 
+	padding: 20px 10px 20px 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.onecol #menuBar {
+	background: #f0f0f0;
+	padding: 0px 0px 0px 0px;
+}
+.onecol #contentHeader { 
+	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #f0f0f0;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	padding: 10px 0px 0px 0px; 
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.onecol #contentMain { 
+	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #f0f0f0;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+
+
+/*----------*/
+/*  HEADERS */
+/*----------*/
+h.h1 {
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	/*padding: 10px 10px;*/	
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 1em;
+	color: black;
+}
+h.h2 {
+	font-family: "Arial", sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black;
+	text-align: left;	
+	line-height: 1.4;
+}
+
+
+/*----------*/
+/*  CONTENT */
+/*----------*/
+p.reg {
+	font-family: "Times New Roman", sanns-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #323232;
+	text-align: justify;	
+	text-decoration: none;
+}
+p.cite {
+	font-family: "Times New Roman", sanns-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #323232;
+	text-align: left;	
+	text-decoration: none;
+	text-indent: -35px;
+	padding-left: 35px;
+}
+
+
+/*----------*/
+/*  LINKS   */
+/*----------*/
+a.cite:link { /*unvisited link*/
+	font-family: "Times New Roman", sanns-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #007ba3;
+	text-align: left;	
+	text-decoration: none;
+}
+a.cite:visited { /*visited link*/
+	color: #007ba3; /*don't change colour*/
+}
+a.cite:hover { /*mouse over link*/
+	color: #e3d050;
+}
+
+
+/*----------*/
+/*  MENU    */
+/*----------*/
+ul {
+	list-style-type: none;
+	position: sticky;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #007ba3;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Arial", sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+}
+li a.button:hover {
+	background-color: #e3d050;
+}
+li a.buttonCurrent {
+	font-weight: bolder;
+}
+
