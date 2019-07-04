@@ -1,6 +1,7 @@
 /*css stylesheet for saarbuckle personal website- July 2019*/
 
 body {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 100%;
 	background-color: #f0f0f0;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
@@ -8,31 +9,46 @@ body {
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 }
 .onecol #container { 
-	width: 900px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	width: 900px; 
 	background: #f0f0f0;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
 }
 .onecol #header { 
 	background: #f0f0f0; 
-	padding: 20px 10px 20px 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding: 20px 10px 20px 10px;  
 }
 .onecol #menuBar {
 	background: #f0f0f0;
 	padding: 0px 0px 0px 0px;
 }
 .onecol #contentHeader { 
-	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	width: 800px; 
 	background: #f0f0f0;
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	margin: 0 auto; 
 	padding: 10px 0px 0px 0px; 
-	text-align: left; /* this overrides the text-align: center on the body element. */
+	text-align: left; 
 }
 .onecol #contentMain { 
-	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	width: 800px;  
 	background: #f0f0f0;
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin: 0 auto; 
+	text-align: left;
+}
+.onecol #imgBar {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.onecol #iconBar {
+	float: right;
+	width: 100px;
+	padding: 12px 20px 0px 0px; 
+	margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    
 }
 
 
@@ -40,7 +56,7 @@ body {
 /*  HEADERS */
 /*----------*/
 h.h1 {
-	font-family: "Arial", sans-serif;
+	/*font-family: "Arial", sans-serif;*/
 	text-align: center;
 	/*padding: 10px 10px;*/	
 	font-size: 2em;
@@ -49,7 +65,7 @@ h.h1 {
 	color: black;
 }
 h.h2 {
-	font-family: "Arial", sans-serif;
+	/*font-family: "Arial", sans-serif;*/
 	font-size: 1.5em;
 	font-weight: bold;
 	color: black;
@@ -62,7 +78,7 @@ h.h2 {
 /*  CONTENT */
 /*----------*/
 p.reg {
-	font-family: "Times New Roman", sanns-serif;
+	/*font-family: "Times New Roman", sanns-serif;*/
 	font-size: 1em;
 	font-weight: normal;
 	color: #323232;
@@ -70,7 +86,7 @@ p.reg {
 	text-decoration: none;
 }
 p.cite {
-	font-family: "Times New Roman", sanns-serif;
+	/*font-family: "Times New Roman", sanns-serif;*/
 	font-size: 1em;
 	font-weight: normal;
 	color: #323232;
@@ -78,25 +94,6 @@ p.cite {
 	text-decoration: none;
 	text-indent: -35px;
 	padding-left: 35px;
-}
-
-
-/*----------*/
-/*  LINKS   */
-/*----------*/
-a.cite:link { /*unvisited link*/
-	font-family: "Times New Roman", sanns-serif;
-	font-size: 1em;
-	font-weight: normal;
-	color: #007ba3;
-	text-align: left;	
-	text-decoration: none;
-}
-a.cite:visited { /*visited link*/
-	color: #007ba3; /*don't change colour*/
-}
-a.cite:hover { /*mouse over link*/
-	color: #e3d050;
 }
 
 
@@ -120,7 +117,7 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-family: "Arial", sans-serif;
+	/*font-family: "Arial", sans-serif;*/
 	font-size: 1em;
 	font-weight: normal;
 }
@@ -131,3 +128,70 @@ li a.buttonCurrent {
 	font-weight: bolder;
 }
 
+
+/*----------*/
+/*  LINKS   */
+/*----------*/
+a.cite:link { /*unvisited link*/
+	/*font-family: "Times New Roman", sanns-serif;*/
+	font-size: 1em;
+	font-weight: normal;
+	color: #007ba3;
+	text-align: left;	
+	text-decoration: none;
+}
+a.cite:visited { /*visited link*/
+	color: #007ba3; /*don't change colour*/
+}
+a.cite:hover { /*mouse over link*/
+	color: #e3d050;
+}
+/*email icon*/
+a.iconEmail:link {
+	color: white;
+}
+a.iconEmail:visited {
+	color: white;
+}
+a.iconEmail:hover {
+	color: black;
+}
+/*twitter icon*/
+a.iconTwitter:link {
+	color: white;
+}
+a.iconTwitter:visited {
+	color: white;
+}
+a.iconTwitter:hover {
+	color: #00acee;
+}
+/*github icon*/
+a.iconGit:link {
+	color: white;
+}
+a.iconGit:visited {
+	color: white;
+}
+a.iconGit:hover {
+	color: #333;
+}
+/*google icon*/
+a.iconG:link {
+	color: white;
+}
+a.iconG:visited {
+	color: white;
+}
+a.iconG:hover {
+	color: #F4B400;
+}
+
+
+/*----------*/
+/*  IMGS    */
+/*----------*/
+img {
+	width: auto;
+	height: 50%;
+}

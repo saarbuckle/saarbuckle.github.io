@@ -4,6 +4,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+		<base target="_blank">
+		<script src="https://use.fontawesome.com/d4bd914e04.js"></script>
 		<title>pubs - saarbuckle</title>	
 	</head>
 
@@ -18,22 +20,41 @@
 			<!--MENU-->
 			<div id="menuBar">
 				<ul>
-					<li><a class="button" href="index.html">Home</a></li>
-					<li><a class="buttonCurrent" href="publications.html">Pubs</a></li>
-					<li><a class="button" href="code.html">Code</a></li>
-					<li><a class="button" href="about.html">About</a></li>
+					<li><a class="button" href="index.html" target="_self">Home</a></li>
+					<li><a class="buttonCurrent" href="publications.html" target="_self">Pubs</a></li>
+					<li><a class="button" href="talks.html" target="_self">Talks</a></li>
+					<div id="iconBar">
+						<!--email-->
+						<a class="iconEmail" href="mailto:saarbuckle@gmail.com">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
+						<!--github-->
+						<a class="iconGit" href="https://github.com/saarbuckle">
+							<i class="fa fa-github" aria-hidden="true"></i>
+						</a>
+						<!--google scholar-->
+						<a class="iconG" href="https://scholar.google.com/citations?user=7Cttf8YAAAAJ&hl=en">
+							<i class="fa fa-google" aria-hidden="true"></i>
+						</a>
+						<!--twitter-->
+						<a class="iconTwitter" href="https://twitter.com/saarbuckle">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</div>
 				</ul>
 			</div>
 			
-			<!--CONTENT-->
+			<!--PUBLISHED PAPERS-->
 			<div id="contentHeader">
 				<h class="h2">Peer-reviewed papers</h><br/>
 			</div>
 			<div id="contentMain">
-				<p class="cite"><b>Arbuckle SA</b>, Yokoi A, Pruszynski JA, Diedrichsen J. (2019). Stability of representational geometry across a wide range of fMRI activity levels. NeuroImage 186: 155-163. <a class="cite" href="https://doi.org/10.1016/j.neuroimage.2018.11.002"> doi: 10.1016/j.neuroimage</a></p>
-				
-				<p class="reg">I am applying to the PCN summer school for three key reasons. First, I aim to expand my background knowledge beyond motor and sensory systems of NHPs. A multi-faceted scientist is one that has broad knowledge of the field. Thus, the broad range of topics that will be covered at the summer school, such as decision making and visual attention, are highly relevant to my professional and personal goals.</p>
+				<p class="cite"><b>Arbuckle SA</b>, Yokoi A, Pruszynski JA, Diedrichsen J. (2019). <a class="cite" href="https://doi.org/10.1016/j.neuroimage.2018.11.002">Stability of representational geometry across a wide range of fMRI activity levels.</a> <i>NeuroImage</i> 186: 155-163.</p>
+				<p class="cite">Yokoi A, <b>Arbuckle SA</b>, Diedrichsen J. (2018). <a class="cite" href="https://doi.org/10.1523/JNEUROSCI.2798-17.2017">The role of human primary motor cortex in the production of skilled finger sequences.</a> <i>J Neuroscience</i> 38: 1430-1442.</p>
+				<p class="cite">Diedrichsen J, Yokoi A, <b>Arbuckle SA</b>. (2018). <a class="cite" href="https://doi.org/10.1016/j.neuroimage.2017.08.051">Pattern Component Modeling: A flexible approach for understanding the representational structure of brain activity patterns.</a> <i>NeuroImage</i> 180: 119-133.<br/>The PCM toolbox (currently only for matlab) is available <a class="cite" href="https://github.com/jdiedrichsen/pcm_toolbox">here</a>.</p>
+				<p class="cite">Lambert C, <b>Arbuckle SA</b>, Holden R. (2016). <a class="cite" href="https://doi.org/10.1016/j.jrp.2016.02.004">The Marlow-Crowne Social Desirability Scale outperforms the BIDR Impression Management Scale for identifying fakers. </a><i>Journal of Research in Personality</i> 61: 80-86.</p>
 			</div>
+			
 		
 		</div> <!--container-->
 	</body>
