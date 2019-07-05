@@ -35,6 +35,7 @@ body {
     width: 400px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
 }
 .onecol #iconBar {
@@ -51,7 +52,10 @@ body {
 /*  IMGS    */
 /*----------*/
 img {
-	width: 70%;
+	
+}
+.funding {
+	width: 40%;
 	height: auto;
 }
 
@@ -70,7 +74,7 @@ img {
 	.onecol #contentHeader { 
 		width: 800px;
 	}
-	img {
+	.funding {
 		width: auto;
 		height: 50%;
 }
