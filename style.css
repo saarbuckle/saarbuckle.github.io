@@ -47,8 +47,17 @@ body {
     
 }
 
+/*----------*/
+/*  IMGS    */
+/*----------*/
+img {
+	width: 70%;
+	height: auto;
+}
+
 /*Set mobile settings*/
 @media only screen and (max-width: 400px) {
+	
 }
 /*Set desktop settings*/
 @media only screen and (min-width: 901px) {
@@ -61,6 +70,10 @@ body {
 	.onecol #contentHeader { 
 		width: 800px;
 	}
+	img {
+		width: auto;
+		height: 50%;
+}
 }
 
 
@@ -194,13 +207,4 @@ a.iconG:visited {
 }
 a.iconG:hover {
 	color: #F4B400;
-}
-
-
-/*----------*/
-/*  IMGS    */
-/*----------*/
-img {
-	width: auto;
-	height: 50%;
 }
