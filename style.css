@@ -32,11 +32,10 @@ body {
 	text-align: left;
 }
 .onecol #imgBar {
-    width: 400px;
+    width: 44%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 .onecol #iconBar {
 	float: right;
@@ -44,7 +43,7 @@ body {
 	padding: 12px 20px 0px 0px; 
 	margin: 0 auto;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     
 }
 
@@ -55,18 +54,18 @@ img {
 	
 }
 .funding {
-	width: 40%;
+	width: 75%;
 	height: auto;
 }
 
 /*Set mobile settings*/
 @media only screen and (max-width: 400px) {
-	
+
 }
 /*Set desktop settings*/
 @media only screen and (min-width: 901px) {
 	.onecol #container {
-		width: 90%;
+		width: 900px;
 	}
 	.onecol #contentMain { 
 		width: 800px;
@@ -74,12 +73,16 @@ img {
 	.onecol #contentHeader { 
 		width: 800px;
 	}
-	.funding {
-		width: auto;
-		height: 50%;
+	.onecol #imgBar {
+    	width: 400px;
+	}
 }
+/*Second set of desktop settings for smooth transition of menu bar*/
+@media only screen and (min-width: 1001px) {
+	.onecol #container {
+		width: 90%;
+	}
 }
-
 
 /*----------*/
 /*  HEADERS */
