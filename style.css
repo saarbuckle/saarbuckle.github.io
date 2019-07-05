@@ -10,7 +10,7 @@ body {
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 }
 .onecol #container { 
-	width: 900px; 
+	width: 100%; 
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
 }
@@ -21,13 +21,13 @@ body {
 	padding: 0px 0px 0px 0px;
 }
 .onecol #contentHeader { 
-	width: 800px; 
+	width: 90%; 
 	margin: 0 auto; 
 	padding: 10px 0px 0px 0px; 
 	text-align: left; 
 }
 .onecol #contentMain { 
-	width: 800px;  
+	width: 90%;  
 	margin: 0 auto; 
 	text-align: left;
 }
@@ -45,6 +45,22 @@ body {
     display: flex;
     justify-content:space-between;
     
+}
+
+/*Set mobile settings*/
+@media only screen and (max-width: 400px) {
+}
+/*Set desktop settings*/
+@media only screen and (min-width: 901px) {
+	.onecol #container {
+		width: 90%;
+	}
+	.onecol #contentMain { 
+		width: 800px;
+	}
+	.onecol #contentHeader { 
+		width: 800px;
+	}
 }
 
 
