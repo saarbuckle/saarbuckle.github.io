@@ -143,7 +143,13 @@ p.cite {
 /*----------*/
 /*  MENU    */
 /*----------*/
-ul {
+ul.cite{
+	list-style-type: dot;
+}
+li.cite{
+	margin-bottom:10px;
+}
+ul.button {
 	list-style-type: none;
 	position: sticky;
 	margin: 0;
@@ -151,10 +157,10 @@ ul {
 	overflow: hidden;
 	background-color: #007ba3;
 }
-li {
+li.button {
 	float: left;
 }
-li a {
+li a.button {
 	display: block;
 	color: white;
 	text-align: center;
@@ -170,6 +176,12 @@ li a.button:hover {
 li a.buttonCurrent {
 	font-weight: bolder;
 	color: #e3d050;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	/*font-family: "Arial", sans-serif;*/
+	font-size: 1em;
 }
 
 
@@ -181,7 +193,6 @@ a.cite:link { /*unvisited link*/
 	font-size: 1em;
 	font-weight: normal;
 	color: #007ba3;
-	text-align: left;	
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
