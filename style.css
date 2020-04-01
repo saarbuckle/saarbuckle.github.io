@@ -39,7 +39,7 @@ body {
 }
 .onecol #iconBar {
 	float: right;
-	width: 60px;/*100*/
+	width: 80px;/*100*/
 	padding: 12px 20px 0px 0px; 
 	margin: 0 auto;
     display: flex;
@@ -174,7 +174,7 @@ li a.button:hover {
 	background-color: #e3d050;
 }
 li a.buttonCurrent {
-	font-weight: bolder;
+	font-weight: normal;/*bolder;*/
 	color: #e3d050;
 	display: block;
 	text-align: center;
@@ -220,6 +220,7 @@ a.iconTwitter:visited {
 }
 a.iconTwitter:hover {
 	color: #00acee;
+	display: twitter;
 }
 /*github icon*/
 a.iconGit:link {
@@ -239,5 +240,5 @@ a.iconG:visited {
 	color: white;
 }
 a.iconG:hover {
-	color: #F4B400;
+	color: #de5246; /*#F4B400;*/
 }
