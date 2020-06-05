@@ -79,7 +79,7 @@ img {
     	width: 400px;
 	}
 }
-/*Second set of desktop settings for smooth transition of menu bar*/
+/*Second set of desktop settings for smooth resizing of menu bar width*/
 @media only screen and (min-width: 1001px) {
 	.onecol #container {
 		width: 90%;
