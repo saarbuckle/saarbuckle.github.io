@@ -52,17 +52,15 @@ body {
 /*----------*/
 /*  IMGS    */
 /*----------*/
-img {
-	
-}
-.funding {
-	width: 75%;
-	height: auto;
+img.small {
+	width: 200px;
 }
 
 /*Set mobile settings*/
 @media only screen and (max-width: 400px) {
-
+	img.small {
+		width: 100px;
+	}
 }
 /*Set desktop settings*/
 @media only screen and (min-width: 901px) {
