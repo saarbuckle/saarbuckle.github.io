@@ -50,40 +50,21 @@ body {
 
 
 /*----------*/
-/*  IMGS    */
+/*  Images  */
 /*----------*/
-img.small {
-	width: 200px;
-}
+img {
 
-/*Set mobile settings*/
-@media only screen and (max-width: 400px) {
-	img.small {
-		width: 100px;
-	}
 }
-/*Set desktop settings*/
-@media only screen and (min-width: 901px) {
-	.onecol #container {
-		width: 900px;
-	}
-	.onecol #contentMain { 
-		width: 800px;
-	}
-	.onecol #contentHeader { 
-		width: 800px;
-	}
-	.onecol #imgBar {
-    	width: 400px;
-	}
+.small {
+	width: 100%;
+	height: auto;
 }
-/*Second set of desktop settings for smooth resizing of menu bar width*/
-@media only screen and (min-width: 1001px) {
-	.onecol #container {
-		width: 90%;
-	}
+.alignMiddle {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 }
-
 
 /*----------*/
 /*  HEADERS */
@@ -241,4 +222,36 @@ a.iconG:visited {
 }
 a.iconG:hover {
 	color: #de5246; /*#F4B400;*/
+}
+
+table.about {
+	width: 90%;
+}
+/*Set mobile settings*/
+/*@media only screen and (max-width: 400px) {
+	
+}*/
+/*Set desktop settings*/
+@media only screen and (min-width: 901px) {
+	.onecol #container {
+		width: 900px;
+	}
+	.onecol #contentMain { 
+		width: 800px;
+	}
+	.onecol #contentHeader { 
+		width: 800px;
+	}
+	.onecol #imgBar {
+    	width: 400px;
+	}
+	table.about {
+		width: 800px;
+	}
+}
+/*Second set of desktop settings for smooth resizing of menu bar width*/
+@media only screen and (min-width: 1001px) {
+	.onecol #container {
+		width: 90%;
+	}
 }
