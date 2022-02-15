@@ -201,7 +201,16 @@ a.iconTwitter:visited {
 }
 a.iconTwitter:hover {
 	color: #00acee;
-	display: twitter;
+}
+/*linkedin icon*/
+a.iconLinkedin:link {
+	color: white;
+}
+a.iconLinkedin:visited {
+	color: white;
+}
+a.iconLinkedin:hover {
+	color: #00acee;
 }
 /*github icon*/
 a.iconGit:link {
