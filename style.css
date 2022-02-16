@@ -152,11 +152,12 @@ li a.button {
 	font-weight: normal;
 }
 li a.button:hover {
-	background-color: #e3d050;
+	/*background-color: #e3d050;*/
+	color: black;
 }
 li a.buttonCurrent {
 	font-weight: normal;/*bolder;*/
-	color: #e3d050;
+	color: black;/*#ebce10;*/
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
@@ -180,20 +181,21 @@ a.cite:visited { /*visited link*/
 	color: #007ba3; /*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: #e3d050;
+	color: #007ba3; /*#e3d050;*/
+	text-decoration: underline;
 }
 /*email icon*/
-a.iconEmail:link {
+a.icon:link {
 	color: white;
 }
-a.iconEmail:visited {
+a.icon:visited {
 	color: white;
 }
-a.iconEmail:hover {
+a.icon:hover {
 	color: black;
 }
 /*twitter icon*/
-a.iconTwitter:link {
+/*a.iconTwitter:link {
 	color: white;
 }
 a.iconTwitter:visited {
@@ -203,7 +205,7 @@ a.iconTwitter:hover {
 	color: #00acee;
 }
 /*linkedin icon*/
-a.iconLinkedin:link {
+/*a.iconLinkedin:link {
 	color: white;
 }
 a.iconLinkedin:visited {
@@ -213,7 +215,7 @@ a.iconLinkedin:hover {
 	color: #00acee;
 }
 /*github icon*/
-a.iconGit:link {
+/*a.iconGit:link {
 	color: white;
 }
 a.iconGit:visited {
@@ -223,15 +225,15 @@ a.iconGit:hover {
 	color: #333;
 }
 /*google icon*/
-a.iconG:link {
+/*a.iconG:link {
 	color: white;
 }
 a.iconG:visited {
 	color: white;
 }
 a.iconG:hover {
-	color: #de5246; /*#F4B400;*/
-}
+	color: *#de5246; #F4B400;
+}*/
 
 table.about {
 	width: 90%;
