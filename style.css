@@ -94,7 +94,7 @@ h.h2 {
 	font-weight: bolder;
 	text-align: left;	
 	line-height: 1.4;
-	color: #007ba3;
+	color: #245178; /*#007ba3;*/
 }
 
 
@@ -136,14 +136,14 @@ ul.button {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #007ba3;
+	background-color: #245178;/*#007ba3;*/
 }
 li.button {
 	float: left;
 }
 li a.button {
 	display: block;
-	color: white;
+	color: #b9bdc7;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -153,11 +153,11 @@ li a.button {
 }
 li a.button:hover {
 	/*background-color: #e3d050;*/
-	color: black;
+	color: white;
 }
 li a.buttonCurrent {
 	font-weight: normal;/*bolder;*/
-	color: black;/*#ebce10;*/
+	color: white;/*#ebce10;*/
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
@@ -186,13 +186,13 @@ a.cite:hover { /*mouse over link*/
 }
 /*email icon*/
 a.icon:link {
-	color: white;
+	color: #b9bdc7;
 }
 a.icon:visited {
-	color: white;
+	color: #b9bdc7;
 }
 a.icon:hover {
-	color: black;
+	color: white;
 }
 /*twitter icon*/
 /*a.iconTwitter:link {
