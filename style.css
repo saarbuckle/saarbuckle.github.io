@@ -1,4 +1,8 @@
 /*css stylesheet for saarbuckle personal website- July 2019*/
+/*title {
+	display: inline-block;
+	position: relative;
+}*/
 
 body {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -64,6 +68,15 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
+}
+.h1logo {
+	/*float: left;*/
+	display:inline-block; 
+	max-width: 35px;
+	height: auto;
+	width: auto\9; /* ie8 */
+	padding-right: 4px;
+	vertical-align: middle;
 }
 
 /*----------*/
