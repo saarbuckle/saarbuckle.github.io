@@ -78,6 +78,14 @@ img {
 	padding-right: 4px;
 	vertical-align: middle;
 }
+.headshot {
+	display: block;
+	float: left;
+	max-width: 20%;
+	height: auto;
+	padding: 0px 10px 10px 10px;
+	width: auto\9; /* ie8 */
+}
 
 /*----------*/
 /*  HEADERS */
