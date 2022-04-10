@@ -172,7 +172,7 @@ li a.button {
 	/*font-family: "Arial", sans-serif;*/
 	font-size: 1em;
 	font-weight: normal;
-	transition: all 0.25s ease 0s;
+	transition: all 0.18s ease 0s;
 }
 li a.button:hover {
 	/*background-color: #e3d050;*/
@@ -210,7 +210,7 @@ a.cite:hover { /*mouse over link*/
 /*site icons*/
 a.icon:link {
 	color: #b9bdc7;
-	transition: all 0.25s ease 0s;
+	transition: all 0.18s ease 0s;
 }
 a.icon:visited {
 	color: #b9bdc7;
