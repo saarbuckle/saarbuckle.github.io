@@ -172,6 +172,7 @@ li a.button {
 	/*font-family: "Arial", sans-serif;*/
 	font-size: 1em;
 	font-weight: normal;
+	transition: all 0.25s ease 0s;
 }
 li a.button:hover {
 	/*background-color: #e3d050;*/
@@ -209,6 +210,7 @@ a.cite:hover { /*mouse over link*/
 /*site icons*/
 a.icon:link {
 	color: #b9bdc7;
+	transition: all 0.25s ease 0s;
 }
 a.icon:visited {
 	color: #b9bdc7;
@@ -216,46 +218,7 @@ a.icon:visited {
 a.icon:hover {
 	color: white;
 }
-/*twitter icon*/
-/*a.iconTwitter:link {
-	color: white;
-}
-a.iconTwitter:visited {
-	color: white;
-}
-a.iconTwitter:hover {
-	color: #00acee;
-}
-/*linkedin icon*/
-/*a.iconLinkedin:link {
-	color: white;
-}
-a.iconLinkedin:visited {
-	color: white;
-}
-a.iconLinkedin:hover {
-	color: #00acee;
-}
-/*github icon*/
-/*a.iconGit:link {
-	color: white;
-}
-a.iconGit:visited {
-	color: white;
-}
-a.iconGit:hover {
-	color: #333;
-}
-/*google icon*/
-/*a.iconG:link {
-	color: white;
-}
-a.iconG:visited {
-	color: white;
-}
-a.iconG:hover {
-	color: *#de5246; #F4B400;
-}*/
+
 
 table.about {
 	width: 90%;
