@@ -206,6 +206,9 @@ a.cite:visited { /*visited link*/
 a.cite:hover { /*mouse over link*/
 	color: #007ba3; /*#e3d050;*/
 	text-decoration: underline;
+	text-decoration-color: gold;
+	text-decoration-style: double;
+	text-decoration-skip-ink: none;
 }
 /*site icons*/
 a.icon:link {
