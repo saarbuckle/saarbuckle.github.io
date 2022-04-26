@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--saarbuckle, updated June 2020-->
+
+<html>
+	<head>
+		<style>
+			::-moz-selection { /* Code for Firefox */
+			  background: gold;
+			}
+			::selection {
+			  background: gold;
+			}
+		</style>
+		<title>SpencerArbuckle</title>
+
+		<base target="_blank"> <!--default to open links in new window-->	
+		
+		<!--CSS files-->
+		<link rel="stylesheet" href="assets/imgs/academicons/css/academicons.css"/>
+		<link rel="stylesheet" href="assets/style.css"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155943809-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+	  		gtag('config', 'UA-155943809-1');
+		</script>
+
+		<!--Embeded logos-->
+		<script src="https://use.fontawesome.com/d4bd914e04.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<!--favicon-->
+		<link rel="icon" type="image/png" href="assets/imgs/logos/logo.png">
+		<link rel="apple-touch-icon" href="assets/imgs/logos/logo.png">
+
+		<!--papaya-->
+		<!-- iOS meta tags -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+        <link rel="stylesheet" type="text/css" href="assets/papaya/papaya.css?build=1449" />
+        <script type="text/javascript" src="assets/papaya/papaya.js?build=1449"></script>
+        
+        <script type="text/javascript"> 
+        	var params = [];
+        	params["worldSpace"] = true;
+        	params["images"] = ["assets/papaya/s04_anatomical.nii", "assets/papaya/s04_glm4_LDC_avg.nii"];
+        	params["s04_glm4_LDC_avg.nii"] = {min:0.005, max:0.05, lut:"Spectrum"};
+        </script>
+	</head>
+
+	<body class="onecol">
+		<div id="container">
+			
+			<!--HEADER-->
+			<div id="header">
+				<img class="h1logo" src="assets/imgs/logos/logo.png">
+				<h class="h1">Spencer Arbuckle</h>
+			</div>
+			
+			<!--MENU-->
+			<div id="menuBar">
+				<!--menu bar-->
+				<ul class="button">
+					<li class="button"><a class="buttonCurrent" href="index.html" target="_self">Home</a></li>
+					<li class="button"><a class="button" href="papers.html" target="_self">Papers</a></li>
+					<!--<li class="button"><a class="button" href="talks.html" target="_self">Talks</a></li>-->
+					<li class="button"><a class="button" href="about.html" target="_self">About</a></li>
+					<div id="iconBar">
+						<!--github-->
+						<a title="GitHub" class="icon" href="https://github.com/saarbuckle">
+							<i class="fa fa-github fa-lg"></i>
+						</a>
+						<!--twitter-->
+						<a title="Twitter" class="icon" href="https://twitter.com/saarbuckle">
+							<i class="fa fa-twitter fa-lg"></i>
+						</a>
+						<!--linkedin-->
+						<a title="LinkedIn" class="icon" href="https://www.linkedin.com/in/spencerarbuckle/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+						<!--google scholar-->
+						<a title="Google Scholar" class="icon" href="https://scholar.google.com/citations?user=7Cttf8YAAAAJ&hl=en">
+							<i class="ai ai-google-scholar  ai-lg"></i>
+						</a>
+					</div>
+				</ul>
+				
+			</div>
+			
+			<div id="contentMain">
+			
+				<p class="reg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper enim at metus viverra mollis. Maecenas eu enim arcu. Suspendisse sapien nisi, lobortis eget consequat eu, aliquet et ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec ultrices diam. Donec eu auctor est. Mauris porttitor non dui sit amet posuere.</p>
+
+				<div style="width:80%; height:80%; margin-left:auto; margin-right:auto;">
+					<div class="papaya" data-params="params">
+					</div>
+				</div>
+
+				<p class="reg">Donec a consequat augue. Sed rhoncus cursus lorem. Donec quis leo eget felis vestibulum egestas. Nullam ac magna massa. Pellentesque placerat libero lacus, ut accumsan velit accumsan a. Donec dictum nunc quis leo placerat eleifend et eget quam. Vestibulum vehicula accumsan ante sit amet fringilla.</p>
+
+				<p class="reg">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec consectetur ex felis, nec ultricies augue mattis sed. Integer lacinia nisl quis ultrices dictum. Aliquam ut consequat enim, eget vehicula libero. Morbi semper accumsan ornare. Aenean eu nulla eu dui commodo varius. Fusce elit nibh, aliquet ac vestibulum non, dapibus in mauris. Integer sit amet quam ipsum. Integer lacinia, magna auctor dictum venenatis, felis nunc mollis diam, et mollis dolor orci varius mauris. Morbi ullamcorper libero nec placerat sagittis. Vestibulum ac imperdiet nisi. Sed finibus a orci congue tristique. Praesent semper, turpis ac sagittis rutrum, nisi enim feugiat leo, a tempus elit metus vel neque. Phasellus placerat massa at dui venenatis, vel placerat ante commodo.</p>
+			</div>
+
+		</div> <!--container-->
+	</body>
+
+</html>
