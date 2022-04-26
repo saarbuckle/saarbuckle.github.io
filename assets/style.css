@@ -176,7 +176,7 @@ li a.button {
 }
 li a.button:hover {
 	/*background-color: #e3d050;*/
-	color: white;
+	color: gold;
 }
 li a.buttonCurrent {
 	font-weight: normal;/*bolder;*/
@@ -219,7 +219,7 @@ a.icon:visited {
 	color: #b9bdc7;
 }
 a.icon:hover {
-	color: white;
+	color: gold;
 }
 
 
