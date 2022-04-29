@@ -204,10 +204,10 @@ a.cite:visited { /*visited link*/
 	color: #007ba3; /*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: #007ba3; /*#e3d050;*/
+	color: goldenrod; /*#007ba3; /*#e3d050;*/
 	text-decoration: underline;
-	text-decoration-color: gold;
-	text-decoration-style: double;
+	text-decoration-color: black;
+	text-decoration-style: solid;
 	text-decoration-skip-ink: none;
 }
 /*site icons*/
