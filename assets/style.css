@@ -134,7 +134,7 @@ p.reg {
 	font-size: 1em;
 	font-weight: normal;
 	color: #000000;/*#333;*/
-	text-align: justify;	
+	text-align: left;	
 	text-decoration: none;
 }
 p.cite {
