@@ -177,13 +177,11 @@ li a.button {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	/*font-family: "Arial", sans-serif;*/
 	font-size: 1em;
 	font-weight: normal;
 	transition: all 0.18s ease 0s;
 }
 li a.button:hover {
-	/*background-color: #e3d050;*/
 	color: gold;
 }
 li a.buttonCurrent {
@@ -216,8 +214,22 @@ a.cite:hover { /*mouse over link*/
 	text-decoration: underline;
 	text-decoration-color: darkslategray;
 	text-decoration-style: solid;
-	
 }
+/* fancy hyperlink underline animation:  https://css-irl.info/animating-underlines/
+a.cite {
+  background: 
+    linear-gradient(to right, rgba(242, 242, 242, 0), rgba(242, 242, 242, 0)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 250ms;
+}
+a.cite:hover,
+a.cite:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 /*site icons*/
 a.icon:link {
 	color: #b9bdc7;
