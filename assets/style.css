@@ -80,6 +80,7 @@ img {
 }
 .headshot {
 	width:  75%;
+	min-width: 100px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -236,7 +237,7 @@ a.icon:hover {
 table.about {
 	margin-left: auto;
   	margin-right: auto;
-	width: 70%;
+	width: 100%;
 	border: 0px;
 }
 td.photo{
@@ -248,6 +249,13 @@ td.header{
 	padding-right: 10px;
 }
 td.text {
+	font-size: 1em;
+	width: 40%;
+	text-align: left;
+}
+td.email {
+	font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;
+	font-size: 0.8em;
 	width: 40%;
 	text-align: left;
 }
