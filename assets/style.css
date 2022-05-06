@@ -214,21 +214,24 @@ a.cite:hover { /*mouse over link*/
 	text-decoration: underline;
 	text-decoration-color: darkslategray;
 	text-decoration-style: solid;
+	background-color: rgb(0,0,0,0.065)
 }
-/* fancy hyperlink underline animation:  https://css-irl.info/animating-underlines/
-a.cite {
+/* fancy hyperlink underline animation:  https://css-irl.info/animating-underlines/ */
+/*a.cite {
   background: 
     linear-gradient(to right, rgba(242, 242, 242, 0), rgba(242, 242, 242, 0)),
     linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-  background-size: 100% 0.1em, 0 0.1em;
+    /*linear-gradient(to right, rgba(68, 1, 84, 1), rgba(64, 67, 135, 1), rgba(41, 119, 142, 1), rgba(34, 167, 132, 1), rgba(121, 209, 81, 1), rgba(252, 231, 36, 1));*/
+  	/*linear-gradient(to right, rgba(12, 7, 133, 1), rgba(106, 0, 167, 1), rgba(176, 42, 143, 1), rgba(224, 99, 96, 1), rgba(252, 166, 52, 1));*/
+  /*background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 250ms;
+  transition: background-size 120ms;
 }
 a.cite:hover,
 a.cite:focus {
   background-size: 0 0.1em, 100% 0.1em;
-}
+}*/
 
 /*site icons*/
 a.icon:link {
