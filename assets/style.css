@@ -199,6 +199,17 @@ li a.buttonCurrent {
 /*----------*/
 /*  LINKS   */
 /*----------*/
+a.header:link { /*unvisited link*/
+	color: black;
+	text-decoration: none;
+}
+a.header:visited { /*visited link*/
+	color: black; /*don't change colour*/
+}
+a.header:hover { /*mouse over link*/
+	color: black;
+	text-decoration: none;
+}
 a.cite:link { /*unvisited link*/
 	/*font-family: "Times New Roman", sanns-serif;*/
 	font-size: 1em;
