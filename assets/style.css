@@ -20,6 +20,23 @@ body {
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
 }
+.onecol #containerFade { 
+	width: 100%; 
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	animation-name: FadeIn;
+  animation-duration: 0.54s;
+  transition-timing-function: ease-in;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .onecol #header { 
 	padding: 10px 10px 10px 10px;  
 }
@@ -38,7 +55,7 @@ body {
 	text-align: left;
 }
 .onecol #imgBar {
-    display: block;
+  display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
