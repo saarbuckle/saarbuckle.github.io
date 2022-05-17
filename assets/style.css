@@ -241,7 +241,7 @@ a.cite:visited { /*visited link*/
 	color: #007ba3; /*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: #007ba3; /*#e3d050;*/
+	color: black; /*#e3d050;*/
 	text-decoration: underline;
 	text-decoration-color: darkslategray;
 	text-decoration-style: solid;
