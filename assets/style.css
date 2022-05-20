@@ -54,19 +54,48 @@ body {
 	margin: 0 auto; 
 	text-align: left;
 }
-.onecol #imgBar {
-  display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-}
 .onecol #iconBar {
 	float: right;
 	width: 105px;/*100*/
 	padding: 12px 20px 0px 0px; 
 	margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+.onecol #imgBar {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	position: relative;
+}
+.onecol #imgBar img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}
+.onecol #imgBar .imgLink {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 17.5%;
+    right: 0px;
+    padding: 2px 5px;
+    color: #007ba3;
+    background: #F2F2F2;
+    text-decoration: none;
+    text-align: left;
+    transition: opacity 300ms;
+}
+.onecol #imgBar:hover .imgLink {
+    opacity: 0.9;
+}
+.onecol #imgBar .imgLink:hover { /*mouse over link*/
+	color: black; /*#e3d050;*/
+	text-decoration: underline;
+	text-decoration-color: darkslategray;
+	text-decoration-style: solid;
 }
 
 
@@ -75,16 +104,6 @@ body {
 /*----------*/
 img {
 
-}
-.small {
-	width: 100%;
-	height: auto;
-}
-.alignMiddle {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 65%;
 }
 .lines {
 	display: block;
@@ -111,6 +130,8 @@ img {
 	padding: 0px 0px 0px 0px;
 	width: auto\9; /* ie8 */
 }
+
+
 
 /*----------*/
 /*  HEADERS */
