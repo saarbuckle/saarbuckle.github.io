@@ -5,11 +5,12 @@
 }*/
 
 body {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: Helvetica, Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 100%;
+	font-weight: 300;
 	color: black;
 	text-rendering: optimizeLegibility;
-	line-height: 1.3;
+	line-height: 1.4;
 	background-color: #F2F2F2;/*#EAE7DC;*/
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 	padding: 0;
@@ -120,6 +121,12 @@ img {
 	padding-right: 4px;
 	vertical-align: middle;
 }
+/*.h1logo:hover {
+	content: url('imgs/logos/logo_hover.png');
+	max-width: 50px;
+	height: auto;
+	width: auto\9;
+}*/
 .headshot {
 	width:  75%;
 	min-width: 100px;
@@ -137,36 +144,25 @@ img {
 /*  HEADERS */
 /*----------*/
 h.h1 {
-	font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;
+	font-family: "Lucida Sans Typewriter","Lucida Console",Monaco;
 	text-align: center;
 	font-size: 2em;
-	font-weight: normal;
+	font-weight: lighter;
 	line-height: 1em;
 	/*word-spacing: 0em;*/
 	display: inline-block;
 	vertical-align: middle;
 }
-h.h1email {
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: lighter;
-	line-height: 1em;
-	color: #000000;
-	display: inline-block;
-	vertical-align: middle;
-}
 h.h2 {
-	/*font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;*/
 	font-size: 1.5em;
-	font-weight: bolder;
+	font-weight: normal;
 	text-align: left;	
 	line-height: 1.4;
 	color: #245178; /*#007ba3;*/
 }
 h.h3 {
-	/*font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;*/
 	font-size: 1.1em;
-	font-weight: bold;
+	font-weight: normal;
 	text-align: left;	
 	line-height: 1;
 	color: #245178;
@@ -178,19 +174,18 @@ h.h3 {
 /*----------*/
 p.reg {
 	font-size: 1em;
-	font-weight: normal;
 	color: #000000;/*#333;*/
 	text-align: left;	
 	text-decoration: none;
 }
 p.cite {
 	font-size: 1em;
-	font-weight: normal;
 	color: #000000;/*#333;*/
 	text-align: left;	
 	text-decoration: none;
-	text-indent: -35px;
-	padding-left: 35px;
+	margin-bottom:12px;
+	/*text-indent: -35px;
+	padding-left: 35px;*/
 }
 
 
@@ -203,6 +198,7 @@ ul.cite{
 li.cite{
 	font-size: 1em;
 	margin-bottom:12px;
+	
 }
 ul.button {
 	/*font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;*/
@@ -223,14 +219,14 @@ li a.button {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 1em;
-	font-weight: normal;
+	/*font-weight: normal;*/
 	transition: all 0.18s ease 0s;
 }
 li a.button:hover {
 	color: gold;
 }
 li a.buttonCurrent {
-	font-weight: normal;/*bolder;*/
+	/*font-weight: normal;*/
 	color: whitesmoke;/*#ebce10;*/
 	display: block;
 	text-align: center;
@@ -255,20 +251,20 @@ a.header:visited { /*visited link*/
 a.header:hover { /*mouse over link*/
 	color: goldenrod;
 	text-decoration: none;
+	transition: all 0.18s ease 0s;
 }
 
 a.cite:link { /*unvisited link*/
 	/*font-family: "Times New Roman", sanns-serif;*/
 	font-size: 1em;
-	font-weight: normal;
-	color: #007ba3;
+	color: #2979E2;/*#007ba3;*/
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
-	color: #007ba3; /*don't change colour*/
+	color: #2979E2;/*#007ba3; /*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: black; /*#e3d050;*/
+	color: black; 
 	text-decoration: underline;
 	text-decoration-color: darkslategray;
 	text-decoration-style: solid;
