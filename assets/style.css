@@ -1,8 +1,5 @@
-/*css stylesheet for saarbuckle personal website- July 2019*/
-/*title {
-	display: inline-block;
-	position: relative;
-}*/
+/* css stylesheet for spencer arbuckle's personal website */
+
 
 body {
 	font-family: Helvetica, Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -39,16 +36,10 @@ body {
 }
 
 .onecol #header { 
-	padding: 10px 10px 10px 10px;  
+	padding: 10px;  
 }
 .onecol #menuBar {
-	padding: 0px 0px 0px 0px;
-}
-.onecol #contentHeader { 
-	width: 90%; 
-	margin: 0 auto; 
-	padding: 10px 0px 0px 0px; 
-	text-align: left; 
+	padding: 0px;
 }
 .onecol #contentMain { 
 	width: 90%;  
@@ -93,7 +84,7 @@ body {
     opacity: 0.9;
 }
 .onecol #imgBar .imgLink:hover { /*mouse over link*/
-	color: black; /*#e3d050;*/
+	color: black;
 	text-decoration: underline;
 	text-decoration-color: darkslategray;
 	text-decoration-style: solid;
@@ -104,7 +95,6 @@ body {
 /*  Images  */
 /*----------*/
 img {
-
 }
 .lines {
 	display: block;
@@ -112,8 +102,7 @@ img {
 	margin-right: auto;
 	width: 100%;
 }
-.h1logo {
-	/*float: left;*/
+.sitelogo {
 	display:inline-block; 
 	max-width: 50px;
 	height: auto;
@@ -121,12 +110,6 @@ img {
 	padding-right: 4px;
 	vertical-align: middle;
 }
-/*.h1logo:hover {
-	content: url('imgs/logos/logo_hover.png');
-	max-width: 50px;
-	height: auto;
-	width: auto\9;
-}*/
 .headshot {
 	width:  75%;
 	min-width: 100px;
@@ -134,7 +117,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
-	padding: 0px 0px 0px 0px;
+	padding: 0px;
 	width: auto\9; /* ie8 */
 }
 
@@ -143,29 +126,24 @@ img {
 /*----------*/
 /*  HEADERS */
 /*----------*/
-h.h1 {
+h.masthead {
 	font-family: "Lucida Sans Typewriter","Lucida Console",Monaco;
 	text-align: center;
 	font-size: 2em;
 	font-weight: lighter;
 	line-height: 1em;
-	/*word-spacing: 0em;*/
 	display: inline-block;
 	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
 }
-h.h2 {
+h2 {
 	font-size: 1.5em;
 	font-weight: normal;
 	text-align: left;	
 	line-height: 1.4;
 	color: #245178; /*#007ba3;*/
-}
-h.h3 {
-	font-size: 1.1em;
-	font-weight: normal;
-	text-align: left;	
-	line-height: 1;
-	color: #245178;
+	margin: 0px;
 }
 
 
@@ -192,71 +170,54 @@ p.cite {
 /*----------*/
 /*  MENU    */
 /*----------*/
-ul.cite{
-	list-style-type: dot;
-}
-li.cite{
-	font-size: 1em;
-	margin-bottom:12px;
-	
-}
 ul.button {
-	/*font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;*/
 	list-style-type: none;
 	position: sticky;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #245178;/*#007ba3;*/
+	background-color: #245178;
 }
 li.button {
 	float: left;
+	padding: 10px 0px 10px 16px;
 }
 li a.button {
 	display: block;
 	color: #b9bdc7;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 1em;
-	/*font-weight: normal;*/
 	transition: all 0.18s ease 0s;
 }
 li a.button:hover {
 	color: gold;
 }
 li a.buttonCurrent {
-	/*font-weight: normal;*/
-	color: whitesmoke;/*#ebce10;*/
+	color: whitesmoke;
 	display: block;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
-	/*font-family: "Arial", sans-serif;*/
-	font-size: 1em;
 }
 
 
 /*----------*/
 /*  LINKS   */
 /*----------*/
-a.header:link { /*unvisited link*/
+a.masthead:link { /*unvisited link*/
 	color: black;
 	text-decoration: none;
 }
-a.header:visited { /*visited link*/
+a.masthead:visited { /*visited link*/
 	color: black; /*don't change colour*/
 	text-decoration: none;
 }
-a.header:hover { /*mouse over link*/
+a.masthead:hover { /*mouse over link*/
 	color: goldenrod;
 	text-decoration: none;
-	transition: all 0.18s ease 0s;
+	transition: all 0.15s ease 0s;
 }
 
 a.cite:link { /*unvisited link*/
-	/*font-family: "Times New Roman", sanns-serif;*/
-	font-size: 1em;
 	color: #2979E2;/*#007ba3;*/
 	text-decoration: none;
 }
