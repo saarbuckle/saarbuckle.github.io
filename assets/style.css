@@ -2,26 +2,24 @@
 
 
 body {
-	font-family: Helvetica, Arial, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	font-weight: 300;
 	color: black;
 	text-rendering: optimizeLegibility;
 	line-height: 1.4;
-	background-color: #F2F2F2;/*#EAE7DC;*/
-	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	background-color: #F2F2F2;
+	margin: 0 auto;
 	padding: 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 }
 .onecol #container { 
 	width: 100%; 
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin: 0 auto; 
 }
 .onecol #containerFade { 
 	width: 100%; 
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin: 0 auto; 
 	animation-name: FadeIn;
   animation-duration: 0.54s;
   transition-timing-function: ease-in;
@@ -44,7 +42,6 @@ body {
 .onecol #contentMain { 
 	width: 90%;  
 	margin: 0 auto; 
-	text-align: left;
 }
 .onecol #iconBar {
 	float: right;
@@ -74,7 +71,7 @@ body {
     left: 17.5%;
     right: 0px;
     padding: 2px 5px;
-    color: #007ba3;
+    color: #2979E2;
     background: #F2F2F2;
     text-decoration: none;
     text-align: left;
@@ -84,9 +81,9 @@ body {
     opacity: 0.9;
 }
 .onecol #imgBar .imgLink:hover { /*mouse over link*/
-	color: black;
+	color: black; 
 	text-decoration: underline;
-	text-decoration-color: darkslategray;
+	text-decoration-color: black;
 	text-decoration-style: solid;
 }
 
@@ -111,23 +108,21 @@ img {
 	vertical-align: middle;
 }
 .headshot {
-	width:  75%;
+	width: 25%;
 	min-width: 100px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	float: left;
 	height: auto;
-	padding: 0px;
+	padding: 5px 15px 5px 5px;
 	width: auto\9; /* ie8 */
 }
-
 
 
 /*----------*/
 /*  HEADERS */
 /*----------*/
 h.masthead {
-	font-family: "Lucida Sans Typewriter","Lucida Console",Monaco;
+	color: #245178;
 	text-align: center;
 	font-size: 2em;
 	font-weight: lighter;
@@ -137,6 +132,11 @@ h.masthead {
 	padding: 0px;
 	margin: 0px;
 }
+h.masthead:hover{
+	color: gold;
+	transition: all 0.15s ease 0s;
+}
+
 h2 {
 	font-size: 1.5em;
 	font-weight: normal;
@@ -212,41 +212,25 @@ a.masthead:visited { /*visited link*/
 	text-decoration: none;
 }
 a.masthead:hover { /*mouse over link*/
-	color: goldenrod;
+	color: gold;
 	text-decoration: none;
 	transition: all 0.15s ease 0s;
 }
 
 a.cite:link { /*unvisited link*/
-	color: #2979E2;/*#007ba3;*/
+	color: #2979E2;
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
-	color: #2979E2;/*#007ba3; /*don't change colour*/
+	color: #2979E2;/*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
 	color: black; 
 	text-decoration: underline;
-	text-decoration-color: darkslategray;
+	text-decoration-color: black;
 	text-decoration-style: solid;
 	background-color: rgb(0,0,0,0.065)
 }
-/* fancy hyperlink underline animation:  https://css-irl.info/animating-underlines/ */
-/*a.cite {
-  background: 
-    linear-gradient(to right, rgba(242, 242, 242, 0), rgba(242, 242, 242, 0)),
-    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-    /*linear-gradient(to right, rgba(68, 1, 84, 1), rgba(64, 67, 135, 1), rgba(41, 119, 142, 1), rgba(34, 167, 132, 1), rgba(121, 209, 81, 1), rgba(252, 231, 36, 1));*/
-  	/*linear-gradient(to right, rgba(12, 7, 133, 1), rgba(106, 0, 167, 1), rgba(176, 42, 143, 1), rgba(224, 99, 96, 1), rgba(252, 166, 52, 1));*/
-  /*background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 120ms;
-}
-a.cite:hover,
-a.cite:focus {
-  background-size: 0 0.1em, 100% 0.1em;
-}*/
 
 /*site icons*/
 a.icon:link {
@@ -258,36 +242,6 @@ a.icon:visited {
 }
 a.icon:hover {
 	color: gold;
-}
-
-
-/*----------*/
-/*  TABLE   */
-/*----------*/
-table.about {
-	margin-left: auto;
-  	margin-right: auto;
-	width: 100%;
-	border: 0px;
-}
-td.photo{
-	width: 30%;
-}
-td.header{
-	width: 10%;
-	text-align: right;
-	padding-right: 10px;
-}
-td.text {
-	font-size: 1em;
-	width: 40%;
-	text-align: left;
-}
-td.email {
-	font-family:"Lucida Sans Typewriter","Lucida Console",Monaco;
-	font-size: 0.8em;
-	width: 40%;
-	text-align: left;
 }
 
 
