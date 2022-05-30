@@ -109,11 +109,11 @@ img {
 }
 .headshot {
 	width: 25%;
-	min-width: 100px;
+	min-width: 125px;
 	display: flex;
-	float: left;
+	float: right;
 	height: auto;
-	padding: 5px 15px 5px 5px;
+	padding: 0px 5px 5px 15px;
 	width: auto\9; /* ie8 */
 }
 
