@@ -101,7 +101,7 @@ img {
 }
 .sitelogo {
 	display:inline-block; 
-	max-width: 50px;
+	max-width: 40px;
 	height: auto;
 	width: auto\9; /* ie8 */
 	padding-right: 4px;
@@ -131,10 +131,29 @@ h.masthead {
 	vertical-align: middle;
 	padding: 0px;
 	margin: 0px;
+	/*text-decoration: underline 0.1em rgba(255,215,0, 0);
+  transition: all 0.15s ease 0s;*/
 }
-h.masthead:hover{
-	color: gold;
-	transition: all 0.15s ease 0s;
+/*h.masthead:hover{
+	color: #245178;
+	text-decoration: underline;
+	text-decoration-color: gold;
+	text-decoration-style: solid;
+	text-decoration: underline 0.1em rgba(255,215,0, 1);
+}*/
+h.masthead:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #245178;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+h.masthead:hover:after {
+  transform: scaleX(1);
 }
 
 h2 {
@@ -187,7 +206,7 @@ li a.button {
 	color: #b9bdc7;
 	text-align: center;
 	text-decoration: none;
-	transition: all 0.18s ease 0s;
+	transition: all 0.15s ease 0s;
 }
 li a.button:hover {
 	color: gold;
@@ -218,24 +237,24 @@ a.masthead:hover { /*mouse over link*/
 }
 
 a.cite:link { /*unvisited link*/
-	color: #2979E2;
+	color: #2F70C3;
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
-	color: #2979E2;/*don't change colour*/
+	color: #2F70C3;/*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: black; 
+	color: #2F70C3; 
 	text-decoration: underline;
 	text-decoration-color: black;
 	text-decoration-style: solid;
-	background-color: rgb(0,0,0,0.065)
+	background-color: rgb(0,0,0,0.06)
 }
 
 /*site icons*/
 a.icon:link {
 	color: #b9bdc7;
-	transition: all 0.1s ease 0s;
+	transition: all 0.15s ease 0s;
 }
 a.icon:visited {
 	color: #b9bdc7;
