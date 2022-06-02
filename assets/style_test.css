@@ -8,7 +8,7 @@ body {
 	color: black;
 	text-rendering: optimizeLegibility;
 	line-height: 1.4;
-	background-color: #F2F2F2;
+	background-color: #FFFFFF;
 	margin: 0 auto;
 	padding: 0;
 	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
@@ -122,7 +122,7 @@ img {
 /*  HEADERS */
 /*----------*/
 h.masthead {
-	color: #245178;
+	color: black;/*#245178;*/
 	text-align: center;
 	font-size: 2em;
 	font-weight: lighter;
@@ -148,7 +148,7 @@ h.masthead:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: black;/*#245178;*/
+  background-color: rgb(230,3,58);/*#245178;*/
   transform: scaleX(0);
   transition: transform 0.2s ease;
 }
@@ -161,7 +161,7 @@ h2 {
 	font-weight: normal;
 	text-align: left;	
 	line-height: 1.4;
-	color: #245178; /*#007ba3;*/
+	color: black; /*#245178;*/ /*#007ba3;*/
 	margin: 0px;
 }
 
@@ -171,7 +171,7 @@ h2 {
 /*----------*/
 p.reg {
 	font-size: 1em;
-	color: #000000;/*#333;*/
+	color: #000000;
 	text-align: left;	
 	text-decoration: none;
 }
@@ -183,7 +183,7 @@ p.tiny {
 }
 p.cite {
 	font-size: 1em;
-	color: #000000;/*#333;*/
+	color: #000000;
 	text-align: left;	
 	text-decoration: none;
 	margin-bottom:12px;
@@ -201,7 +201,7 @@ ul.button {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #245178;
+	background-color: black; /*#245178;*/
 }
 li.button {
 	float: left;
@@ -243,14 +243,14 @@ a.masthead:hover { /*mouse over link*/
 }
 
 a.cite:link { /*unvisited link*/
-	color: #2F70C3;
+	color: rgb(230,3,58);/*#2F70C3;*/
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
-	color: #2F70C3;/*don't change colour*/
+	color: rgb(230,3,58);/*#2F70C3;*//*don't change colour*/
 }
 a.cite:hover { /*mouse over link*/
-	color: #2F70C3; 
+	color: rgb(230,3,58);/*#2F70C3;*/
 	text-decoration: underline;
 	text-decoration-color: black;
 	text-decoration-style: solid;
