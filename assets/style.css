@@ -1,17 +1,33 @@
 /* css stylesheet for spencer arbuckle's personal website */
 
+:root {
+	--color-bg: #F1F1F1;
+	--color-btn-bg: #023047;
+	--color-btn-text: #b9bdc7;
+	--color-btn-text-hover: #FFD700;
+	--color-btn-text-current: #F5F5F5;
+	--color-text-masthead: #023047;
+	--color-text-h2: #245178;
+	--color-text-p: #000000;
+	--color-text-strong: #000000;
+	--color-text-link: #2F70C3;
+	--color-text-link-hover: #2F70C3;
+	--color-text-link-active: #FFA500;
+	--color-text-link-underline: #000000;
+	--transition-time: 0.1s;
+}
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	font-weight: 300;
-	color: black;
+	color: var(--color-text-p);
 	text-rendering: optimizeLegibility;
+	text-align: left;
 	line-height: 1.4;
-	background-color: #F1F1F1;
+	background-color: var(--color-bg);
 	margin: 0 auto;
 	padding: 0;
-	text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 }
 .onecol #container { 
 	width: 100%; 
@@ -71,20 +87,23 @@ body {
     left: 17.5%;
     right: 0px;
     padding: 2px 5px;
-    color: #2979E2;
-    background: #F2F2F2;
+    color: var(--color-text-link);
+    background: var(--color-bg);
     text-decoration: none;
     text-align: left;
     transition: opacity 300ms;
 }
 .onecol #imgBar:hover .imgLink {
-    opacity: 0.9;
+    opacity: 0.95;
 }
 .onecol #imgBar .imgLink:hover { /*mouse over link*/
-	color: black; 
+	color: var(--color-text-link-hover); 
 	text-decoration: underline;
-	text-decoration-color: black;
+	text-decoration-color: var(--color-text-link-underline);
 	text-decoration-style: solid;
+}
+.onecol #imgBar .imgLink:active { /*mouse click*/
+	color: var(--color-text-link-active); 
 }
 
 
@@ -113,16 +132,27 @@ img {
 	display: flex;
 	float: right;
 	height: auto;
-	padding: 0px 5px 5px 15px;
+	padding-bottom: 15px;
 	width: auto\9; /* ie8 */
 }
 
 
+
 /*----------*/
-/*  HEADERS */
+/*  TEXT    */
 /*----------*/
+p.reg {
+	font-size: 1em;
+	color: var(--color-text-p);
+	text-align: left;	
+	text-decoration: none;
+}
+strong{
+	color: var(--color-text-strong);
+}
+
 h.masthead {
-	color: #245178;
+	color: 	var(--color-text-masthead);
 	text-align: center;
 	font-size: 2em;
 	font-weight: lighter;
@@ -131,69 +161,43 @@ h.masthead {
 	vertical-align: middle;
 	padding: 0px;
 	margin: 0px;
-	/*text-decoration: underline 0.1em rgba(255,215,0, 0);
-  transition: all 0.15s ease 0s;*/
+	text-decoration: underline 0.1em rgba(255,215,0, 0);
+  transition: all var(--transition-time) ease 0s;
 }
-/*h.masthead:hover{
-	color: #245178;
+h.masthead:hover{
+	color: var(--color-text-masthead);
 	text-decoration: underline;
-	text-decoration-color: gold;
+	text-decoration-color: var(--color-btn-text-hover);
 	text-decoration-style: solid;
 	text-decoration: underline 0.1em rgba(255,215,0, 1);
-}*/
-h.masthead:after {
+}
+/*h.masthead:after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: black;/*#245178;*/
+  background-color: var(--color-text-link-underline);
   transform: scaleX(0);
   transition: transform 0.2s ease;
 }
 h.masthead:hover:after {
   transform: scaleX(1);
-}
+}*/
 
-h2 {
+h1 {
 	font-size: 1.5em;
 	font-weight: normal;
 	text-align: left;	
 	line-height: 1.4;
-	color: #245178; /*#007ba3;*/
+	color: var(--color-text-h2);
 	margin: 0px;
 }
 
 
 /*----------*/
-/*  CONTENT */
-/*----------*/
-p.reg {
-	font-size: 1em;
-	color: #000000;/*#333;*/
-	text-align: left;	
-	text-decoration: none;
-}
-p.tiny {
-	font-size: 0.5em;
-	color: slategray;
-	text-align: center;	
-	text-decoration: none;
-}
-p.cite {
-	font-size: 1em;
-	color: #000000;/*#333;*/
-	text-align: left;	
-	text-decoration: none;
-	margin-bottom:12px;
-	/*text-indent: -35px;
-	padding-left: 35px;*/
-}
-
-
-/*----------*/
-/*  MENU    */
+/*  LIST    */
 /*----------*/
 ul.button {
 	list-style-type: none;
@@ -201,7 +205,7 @@ ul.button {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #245178;
+	background-color: var(--color-btn-bg);
 }
 li.button {
 	float: left;
@@ -209,16 +213,16 @@ li.button {
 }
 li a.button {
 	display: block;
-	color: #b9bdc7;
+	color: var(--color-btn-text);
 	text-align: center;
 	text-decoration: none;
-	transition: all 0.15s ease 0s;
+	transition: all var(--transition-time) ease 0s;
 }
 li a.button:hover {
-	color: gold;
+	color: var(--color-btn-text-hover);
 }
 li a.buttonCurrent {
-	color: whitesmoke;
+	color: var(--color-btn-text-current);
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -228,52 +232,38 @@ li a.buttonCurrent {
 /*----------*/
 /*  LINKS   */
 /*----------*/
-a.masthead:link { /*unvisited link*/
-	color: black;
-	text-decoration: none;
-}
-a.masthead:visited { /*visited link*/
-	color: black; /*don't change colour*/
-	text-decoration: none;
-}
-a.masthead:hover { /*mouse over link*/
-	color: gold;
-	text-decoration: none;
-	transition: all 0.15s ease 0s;
-}
-
 a.cite:link { /*unvisited link*/
-	color: #2F70C3;
+	color: var(--color-text-link);
 	text-decoration: none;
 }
 a.cite:visited { /*visited link*/
-	color: #2F70C3;/*don't change colour*/
+	color: var(--color-text-link);
 }
 a.cite:hover { /*mouse over link*/
-	color: #2F70C3; 
+	color: var(--color-text-link-hover); 
 	text-decoration: underline;
-	text-decoration-color: black;
+	text-decoration-color: var(--color-text-link-underline);
 	text-decoration-style: solid;
 	background-color: rgb(0,0,0,0.06)
 }
 a.cite:active { /*on mouse click*/
-	color: orange; 
+	color: var(--color-text-link-active); 
 	text-decoration: underline;
-	text-decoration-color: black;
+	text-decoration-color: var(--color-text-link-underline);
 	text-decoration-style: solid;
 	background-color: rgb(0,0,0,0.06)
 }
 
 /*site icons*/
 a.icon:link {
-	color: #b9bdc7;
-	transition: all 0.15s ease 0s;
+	color: var(--color-btn-text);
+	transition: all var(--transition-time) ease 0s;
 }
 a.icon:visited {
-	color: #b9bdc7;
+	color: var(--color-btn-text);
 }
 a.icon:hover {
-	color: gold;
+	color: var(--color-btn-text-hover);
 }
 
 
