@@ -1,7 +1,7 @@
 /* css stylesheet for spencer arbuckle's personal website */
 
 :root {
-	--color-bg: #F1F1F1;
+	--color-bg: #F9F8F7;
 	--color-btn-bg: #023047;
 	--color-btn-text: #b9bdc7;
 	--color-btn-text-hover: #FFD700;
@@ -151,6 +151,20 @@ strong{
 	color: var(--color-text-strong);
 }
 
+span.togglePre{
+	cursor: help; 
+	font-style: normal;
+	text-decoration: underline;
+	text-decoration-color: silver;
+	text-decoration-style: solid;
+}
+span.togglePost{
+	color: rgb(130,130,130,1);
+	display: none;
+	font-style: italic;
+	/*background-color: rgb(164,164,164,0.4);*/
+}
+
 h.masthead {
 	color: 	var(--color-text-masthead);
 	text-align: center;
@@ -257,7 +271,7 @@ a.cite:active { /*on mouse click*/
 /*site icons*/
 a.icon:link {
 	color: var(--color-btn-text);
-	transition: all var(--transition-time) ease 0s;
+	transition: all var(--transition-time) ease 0.05s;
 }
 a.icon:visited {
 	color: var(--color-btn-text);
