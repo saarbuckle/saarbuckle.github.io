@@ -12,7 +12,7 @@
 	--color-text-strong: #000000;
 	--color-text-link: #2F70C3;
 	--color-text-link-hover: #2F70C3;
-	--color-text-link-active: #FFA500;
+	--color-text-link-active: black;
 	--color-text-link-underline: #000000;
 	--transition-time: 0.1s;
 }
@@ -234,6 +234,7 @@ li a.button {
 }
 li a.button:hover {
 	color: var(--color-btn-text-hover);
+	text-decoration-line: underline;
 }
 li a.buttonCurrent {
 	color: var(--color-btn-text-current);
@@ -271,7 +272,7 @@ a.cite:active { /*on mouse click*/
 /*site icons*/
 a.icon:link {
 	color: var(--color-btn-text);
-	transition: all var(--transition-time) ease 0.05s;
+	transition: all var(--transition-time) ease 0s;
 }
 a.icon:visited {
 	color: var(--color-btn-text);
