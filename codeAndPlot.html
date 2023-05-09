@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPPK1DJ04D"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-LPPK1DJ04D');
+		</script>
+		
+		<title>Spencer Arbuckle</title>
+		<meta name="description" content="I am a (neuro)scientist PhD interested in touch, movement, and data science. This is my personal webpage">
+
+		<!--default to open links in current tab-->
+		<base target="_self"> 	
+		
+		<!--asset files-->
+		<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css"/>
+		<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+		<!--<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/python.min.js"></script>-->
+		<script>hljs.highlightAll();</script>
+
+		<link rel="stylesheet" href="assets/imgs/academicons/css/academicons.css"/>
+		<link rel="stylesheet" href="assets/style.css"/>
+		<script src="assets/script.js"></script>
+
+		<!--Embeded logos-->
+		<script src="https://use.fontawesome.com/d4bd914e04.js" async></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<!--favicon-->
+		<link rel="icon" type="image/png" href="assets/imgs/logos/logo.png">
+		<link rel="apple-touch-icon" href="assets/imgs/logos/logo.png">
+
+		<!--plotly stuff-->
+		<script src="assets/r_dependencies/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+		<script src="assets/r_dependencies/plotly-binding-4.10.1/plotly.js"></script>
+		<script src="assets/r_dependencies/typedarray-0.1/typedarray.min.js"></script>
+		<script src="assets/r_dependencies/jquery-3.5.1/jquery.min.js"></script>
+		<link href="assets/r_dependencies/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+		<script src="assets/r_dependencies/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+		<link href="assets/r_dependencies/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+		<script src="assets/r_dependencies/plotly-main-2.11.1/plotly-latest.min.js"></script>
+	</head>
+
+	<body class="onecol">
+		<div id="container">
+			
+			<!--HEADER-->
+			<div id="header">
+				<img class="sitelogo" src="assets/imgs/logos/logo.png">
+				<a href="index.html"><h class="masthead">Spencer Arbuckle</h></a>
+			</div>
+			
+			<!--MENU-->
+			<div id="menuBar">
+				<!--menu bar-->
+				<ul class="button">
+					<li class="button"><a class="button" href="research.html">Research</a></li>
+					<li class="button"><a class="button" href="publications.html">Publications</a></li>
+					<li class="button"><a class="button" href="about.html">About</a></li>
+					<div id="iconBar">
+						<!--github-->
+						<a title="GitHub" class="icon" href="https://github.com/saarbuckle">
+							<i class="fa fa-github fa-lg"></i>
+						</a>
+						<!--twitter-->
+						<a title="Twitter" class="icon" href="https://twitter.com/saarbuckle">
+							<i class="fa fa-twitter fa-lg"></i>
+						</a>
+						<!--linkedin-->
+						<a title="LinkedIn" class="icon" href="https://www.linkedin.com/in/spencerarbuckle/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+						<!--google scholar-->
+						<a title="Google Scholar" class="icon" href="https://scholar.google.com/citations?user=7Cttf8YAAAAJ&hl=en">
+							<i class="ai ai-google-scholar  ai-lg"></i>
+						</a>
+					</div>
+				</ul>
+				
+			</div>
+		</div>
+
+		<div id="containerFade">
+			<div id="contentMain">
+				<p class="reg">
+					<h1 id="context">Context</h1>
+
+					<p style="margin: 0;">Here I offer a brief, but accurate, statement of the facts and my basic assumptions.</p>
+
+					<br>
+
+					<h1 id="problem_statement">Problem</h1>
+
+					<p style="margin: 0;">Now, I state clearly the problem we face given the current context. I might even wax poetic, to a degree, to stretch the length of this example paragraph a bit longer. There, that looks better.</p>
+
+					<br>
+
+					<h1 id="recommendation">Recommendation</h1>
+
+					<h2 id="rec_summary">Summary</h2>
+
+					<p style="margin: 0;">I think it would be prudent to provide high-level answers to the problem right away, like an executive summary does.</p>
+
+					<p>Lists are nice, so I will use a list:
+						<ul>
+							<li>point number one</li>
+							<li>point number two</li>
+							<li>point number three</li>
+						</ul>
+					</p>
+
+					<h2 id="rec_data">Supporting data</h2>
+
+					<p style="margin: 0;">Add some details about data used here, brief idea of the methods, and then some interactive figures (if possible). Probably using R and plotly.</p>
+
+						<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-70ea7ec91f18672ca3bb" style="width:100%;height:400px;"></div>
+
+					<br>
+
+					<h1 id="appendix">Appendix</h1>
+
+					<h2 id="appendix_methods">Methods</h2>
+
+					<p style="margin: 0;">Here will be the meat of the code. I will detail my assumptions once more, <a class="cite" href="research.html">cite sources</a> as needed, and provide chunks of code like so:
+
+					<pre>
+<code class="language-r" data-lang="r">render_plotly_html <- function(p) {
+  p %>%
+    plotly::as_widget() %>%
+    list() %>%
+    htmltools::tagList()
+}</code></pre>
+
+					</p>
+
+					<p>Previously, I used computational models combined with measures of brain, muscle, and behavioural data to <a class="cite" href="research.html">research</a> how we sense and interact with our world through movement. As part of this, I helped develop <a class="cite" href="research.html#stats">novel statistical methods</a> to analyze brain data.</p>
+
+					<pre>
+<code>@requires_authorization(roles=["ADMIN"])
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 > param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+>>> message = '''interpreter
+... prompt'''
+</code></pre>
+
+					<p>You can find my contact information <a class="cite" href="about.html#contact">here</a>.</p>
+				</p>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div> <!--container-->
+
+<script type="application/json" data-for="htmlwidget-70ea7ec91f18672ca3bb">{"x":{"data":[{"x":[1.34928206305101,1.34994672305064,1.36369241421974,1.36562872241257,1.39323544836292,1.43796883728664,1.49795025279696,1.57323736669998,1.66388785080177,1.77178463756045,1.89720496240292,2.03487679443774,2.19555630945838,2.38216091825248,2.58601509950612,2.79844333190542,3.01077009413646,3.23579131264656,3.50437416623132,3.74910324467458,3.95743052749223,4.17119400857379,4.37960756145888,4.57170486886926,4.7365196135267,4.86264600364266,4.94826108383448,5.01206404075964,5.07450244769226,5.15211160986051,5.22645084570804,5.29507345168175,5.36228532746192,5.43239237272884,5.50970048716278,5.59171620932869,5.67243560444973,5.75195171024453,5.83036257379725,5.90776624219206,5.98426076251314,6.05994418184466,6.13491454727079,6.20926990587571,6.28310830474359,6.3565277909586,6.42962641160491,6.5025022137667,6.57525324452814,6.6479775509734],"y":[4.4469387755102,4.3734693877551,4.52040816326531,4.3,4.59387755102041,4.66734693877551,4.74081632653061,4.81428571428571,4.88775510204082,4.96122448979592,5.03469387755102,5.10816326530612,5.18163265306122,5.25510204081633,5.32857142857143,5.40204081632653,5.47551020408163,5.54897959183673,5.62244897959184,5.69591836734694,5.76938775510204,5.84285714285714,5.91632653061224,5.98979591836735,6.06326530612245,6.13673469387755,6.21020408163265,6.28367346938776,6.35714285714286,6.43061224489796,6.50408163265306,6.57755102040816,6.65102040816327,6.72448979591837,6.79795918367347,6.87142857142857,6.94489795918367,7.01836734693878,7.09183673469388,7.16530612244898,7.23877551020408,7.31224489795918,7.38571428571429,7.45918367346939,7.53265306122449,7.60612244897959,7.67959183673469,7.7530612244898,7.8265306122449,7.9],"text":["Petal.Length: 1.349282<br />Sepal.Length: 4.446939<br />Species: black","Petal.Length: 1.349947<br />Sepal.Length: 4.373469<br />Species: black","Petal.Length: 1.363692<br />Sepal.Length: 4.520408<br />Species: black","Petal.Length: 1.365629<br />Sepal.Length: 4.300000<br />Species: black","Petal.Length: 1.393235<br />Sepal.Length: 4.593878<br />Species: black","Petal.Length: 1.437969<br />Sepal.Length: 4.667347<br />Species: black","Petal.Length: 1.497950<br />Sepal.Length: 4.740816<br />Species: black","Petal.Length: 1.573237<br />Sepal.Length: 4.814286<br />Species: black","Petal.Length: 1.663888<br />Sepal.Length: 4.887755<br />Species: black","Petal.Length: 1.771785<br />Sepal.Length: 4.961224<br />Species: black","Petal.Length: 1.897205<br />Sepal.Length: 5.034694<br />Species: black","Petal.Length: 2.034877<br />Sepal.Length: 5.108163<br />Species: black","Petal.Length: 2.195556<br />Sepal.Length: 5.181633<br />Species: black","Petal.Length: 2.382161<br />Sepal.Length: 5.255102<br />Species: black","Petal.Length: 2.586015<br />Sepal.Length: 5.328571<br />Species: black","Petal.Length: 2.798443<br />Sepal.Length: 5.402041<br />Species: black","Petal.Length: 3.010770<br />Sepal.Length: 5.475510<br />Species: black","Petal.Length: 3.235791<br />Sepal.Length: 5.548980<br />Species: black","Petal.Length: 3.504374<br />Sepal.Length: 5.622449<br />Species: black","Petal.Length: 3.749103<br />Sepal.Length: 5.695918<br />Species: black","Petal.Length: 3.957431<br />Sepal.Length: 5.769388<br />Species: black","Petal.Length: 4.171194<br />Sepal.Length: 5.842857<br />Species: black","Petal.Length: 4.379608<br />Sepal.Length: 5.916327<br />Species: black","Petal.Length: 4.571705<br />Sepal.Length: 5.989796<br />Species: black","Petal.Length: 4.736520<br />Sepal.Length: 6.063265<br />Species: black","Petal.Length: 4.862646<br />Sepal.Length: 6.136735<br />Species: black","Petal.Length: 4.948261<br />Sepal.Length: 6.210204<br />Species: black","Petal.Length: 5.012064<br />Sepal.Length: 6.283673<br />Species: black","Petal.Length: 5.074502<br />Sepal.Length: 6.357143<br />Species: black","Petal.Length: 5.152112<br />Sepal.Length: 6.430612<br />Species: black","Petal.Length: 5.226451<br />Sepal.Length: 6.504082<br />Species: black","Petal.Length: 5.295073<br />Sepal.Length: 6.577551<br />Species: black","Petal.Length: 5.362285<br />Sepal.Length: 6.651020<br />Species: black","Petal.Length: 5.432392<br />Sepal.Length: 6.724490<br />Species: black","Petal.Length: 5.509700<br />Sepal.Length: 6.797959<br />Species: black","Petal.Length: 5.591716<br />Sepal.Length: 6.871429<br />Species: black","Petal.Length: 5.672436<br />Sepal.Length: 6.944898<br />Species: black","Petal.Length: 5.751952<br />Sepal.Length: 7.018367<br />Species: black","Petal.Length: 5.830363<br />Sepal.Length: 7.091837<br />Species: black","Petal.Length: 5.907766<br />Sepal.Length: 7.165306<br />Species: black","Petal.Length: 5.984261<br />Sepal.Length: 7.238776<br />Species: black","Petal.Length: 6.059944<br />Sepal.Length: 7.312245<br />Species: black","Petal.Length: 6.134915<br />Sepal.Length: 7.385714<br />Species: black","Petal.Length: 6.209270<br />Sepal.Length: 7.459184<br />Species: black","Petal.Length: 6.283108<br />Sepal.Length: 7.532653<br />Species: black","Petal.Length: 6.356528<br />Sepal.Length: 7.606122<br />Species: black","Petal.Length: 6.429626<br />Sepal.Length: 7.679592<br />Species: black","Petal.Length: 6.502502<br />Sepal.Length: 7.753061<br />Species: black","Petal.Length: 6.575253<br />Sepal.Length: 7.826531<br />Species: black","Petal.Length: 6.647978<br />Sepal.Length: 7.900000<br />Species: black"],"type":"scatter","mode":"lines","line":{"width":3.77952755905512,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4],"y":[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5],"text":["Petal.Length: 1.4<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.9<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 4.7<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 4.6<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.7<br />Sepal.Length: 5.4<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.6<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.4<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 4.9<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.4<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 4.8<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.8<br />Species: setosa","Petal.Length: 1.1<br />Sepal.Length: 4.3<br />Species: setosa","Petal.Length: 1.2<br />Sepal.Length: 5.8<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.7<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 5.4<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.7<br />Sepal.Length: 5.7<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.7<br />Sepal.Length: 5.4<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.0<br />Sepal.Length: 4.6<br />Species: setosa","Petal.Length: 1.7<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.9<br />Sepal.Length: 4.8<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.2<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 5.2<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 4.7<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 4.8<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.4<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.2<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 5.5<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 4.9<br />Species: setosa","Petal.Length: 1.2<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 5.5<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.9<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 4.4<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 4.5<br />Species: setosa","Petal.Length: 1.3<br />Sepal.Length: 4.4<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 5.0<br />Species: setosa","Petal.Length: 1.9<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.8<br />Species: setosa","Petal.Length: 1.6<br />Sepal.Length: 5.1<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 4.6<br />Species: setosa","Petal.Length: 1.5<br />Sepal.Length: 5.3<br />Species: setosa","Petal.Length: 1.4<br />Sepal.Length: 5.0<br />Species: setosa"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"setosa","legendgroup":"setosa","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1],"y":[7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7],"text":["Petal.Length: 4.7<br />Sepal.Length: 7.0<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 6.4<br />Species: versicolor","Petal.Length: 4.9<br />Sepal.Length: 6.9<br />Species: versicolor","Petal.Length: 4.0<br />Sepal.Length: 5.5<br />Species: versicolor","Petal.Length: 4.6<br />Sepal.Length: 6.5<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 5.7<br />Species: versicolor","Petal.Length: 4.7<br />Sepal.Length: 6.3<br />Species: versicolor","Petal.Length: 3.3<br />Sepal.Length: 4.9<br />Species: versicolor","Petal.Length: 4.6<br />Sepal.Length: 6.6<br />Species: versicolor","Petal.Length: 3.9<br />Sepal.Length: 5.2<br />Species: versicolor","Petal.Length: 3.5<br />Sepal.Length: 5.0<br />Species: versicolor","Petal.Length: 4.2<br />Sepal.Length: 5.9<br />Species: versicolor","Petal.Length: 4.0<br />Sepal.Length: 6.0<br />Species: versicolor","Petal.Length: 4.7<br />Sepal.Length: 6.1<br />Species: versicolor","Petal.Length: 3.6<br />Sepal.Length: 5.6<br />Species: versicolor","Petal.Length: 4.4<br />Sepal.Length: 6.7<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 5.6<br />Species: versicolor","Petal.Length: 4.1<br />Sepal.Length: 5.8<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 6.2<br />Species: versicolor","Petal.Length: 3.9<br />Sepal.Length: 5.6<br />Species: versicolor","Petal.Length: 4.8<br />Sepal.Length: 5.9<br />Species: versicolor","Petal.Length: 4.0<br />Sepal.Length: 6.1<br />Species: versicolor","Petal.Length: 4.9<br />Sepal.Length: 6.3<br />Species: versicolor","Petal.Length: 4.7<br />Sepal.Length: 6.1<br />Species: versicolor","Petal.Length: 4.3<br />Sepal.Length: 6.4<br />Species: versicolor","Petal.Length: 4.4<br />Sepal.Length: 6.6<br />Species: versicolor","Petal.Length: 4.8<br />Sepal.Length: 6.8<br />Species: versicolor","Petal.Length: 5.0<br />Sepal.Length: 6.7<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 6.0<br />Species: versicolor","Petal.Length: 3.5<br />Sepal.Length: 5.7<br />Species: versicolor","Petal.Length: 3.8<br />Sepal.Length: 5.5<br />Species: versicolor","Petal.Length: 3.7<br />Sepal.Length: 5.5<br />Species: versicolor","Petal.Length: 3.9<br />Sepal.Length: 5.8<br />Species: versicolor","Petal.Length: 5.1<br />Sepal.Length: 6.0<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 5.4<br />Species: versicolor","Petal.Length: 4.5<br />Sepal.Length: 6.0<br />Species: versicolor","Petal.Length: 4.7<br />Sepal.Length: 6.7<br />Species: versicolor","Petal.Length: 4.4<br />Sepal.Length: 6.3<br />Species: versicolor","Petal.Length: 4.1<br />Sepal.Length: 5.6<br />Species: versicolor","Petal.Length: 4.0<br />Sepal.Length: 5.5<br />Species: versicolor","Petal.Length: 4.4<br />Sepal.Length: 5.5<br />Species: versicolor","Petal.Length: 4.6<br />Sepal.Length: 6.1<br />Species: versicolor","Petal.Length: 4.0<br />Sepal.Length: 5.8<br />Species: versicolor","Petal.Length: 3.3<br />Sepal.Length: 5.0<br />Species: versicolor","Petal.Length: 4.2<br />Sepal.Length: 5.6<br />Species: versicolor","Petal.Length: 4.2<br />Sepal.Length: 5.7<br />Species: versicolor","Petal.Length: 4.2<br />Sepal.Length: 5.7<br />Species: versicolor","Petal.Length: 4.3<br />Sepal.Length: 6.2<br />Species: versicolor","Petal.Length: 3.0<br />Sepal.Length: 5.1<br />Species: versicolor","Petal.Length: 4.1<br />Sepal.Length: 5.7<br />Species: versicolor"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,186,56,1)","opacity":1,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,186,56,1)"}},"hoveron":"points","name":"versicolor","legendgroup":"versicolor","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],"y":[6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],"text":["Petal.Length: 6.0<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 5.8<br />Species: virginica","Petal.Length: 5.9<br />Sepal.Length: 7.1<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.8<br />Sepal.Length: 6.5<br />Species: virginica","Petal.Length: 6.6<br />Sepal.Length: 7.6<br />Species: virginica","Petal.Length: 4.5<br />Sepal.Length: 4.9<br />Species: virginica","Petal.Length: 6.3<br />Sepal.Length: 7.3<br />Species: virginica","Petal.Length: 5.8<br />Sepal.Length: 6.7<br />Species: virginica","Petal.Length: 6.1<br />Sepal.Length: 7.2<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 6.5<br />Species: virginica","Petal.Length: 5.3<br />Sepal.Length: 6.4<br />Species: virginica","Petal.Length: 5.5<br />Sepal.Length: 6.8<br />Species: virginica","Petal.Length: 5.0<br />Sepal.Length: 5.7<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 5.8<br />Species: virginica","Petal.Length: 5.3<br />Sepal.Length: 6.4<br />Species: virginica","Petal.Length: 5.5<br />Sepal.Length: 6.5<br />Species: virginica","Petal.Length: 6.7<br />Sepal.Length: 7.7<br />Species: virginica","Petal.Length: 6.9<br />Sepal.Length: 7.7<br />Species: virginica","Petal.Length: 5.0<br />Sepal.Length: 6.0<br />Species: virginica","Petal.Length: 5.7<br />Sepal.Length: 6.9<br />Species: virginica","Petal.Length: 4.9<br />Sepal.Length: 5.6<br />Species: virginica","Petal.Length: 6.7<br />Sepal.Length: 7.7<br />Species: virginica","Petal.Length: 4.9<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.7<br />Sepal.Length: 6.7<br />Species: virginica","Petal.Length: 6.0<br />Sepal.Length: 7.2<br />Species: virginica","Petal.Length: 4.8<br />Sepal.Length: 6.2<br />Species: virginica","Petal.Length: 4.9<br />Sepal.Length: 6.1<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.4<br />Species: virginica","Petal.Length: 5.8<br />Sepal.Length: 7.2<br />Species: virginica","Petal.Length: 6.1<br />Sepal.Length: 7.4<br />Species: virginica","Petal.Length: 6.4<br />Sepal.Length: 7.9<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.4<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.1<br />Species: virginica","Petal.Length: 6.1<br />Sepal.Length: 7.7<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.5<br />Sepal.Length: 6.4<br />Species: virginica","Petal.Length: 4.8<br />Sepal.Length: 6.0<br />Species: virginica","Petal.Length: 5.4<br />Sepal.Length: 6.9<br />Species: virginica","Petal.Length: 5.6<br />Sepal.Length: 6.7<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 6.9<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 5.8<br />Species: virginica","Petal.Length: 5.9<br />Sepal.Length: 6.8<br />Species: virginica","Petal.Length: 5.7<br />Sepal.Length: 6.7<br />Species: virginica","Petal.Length: 5.2<br />Sepal.Length: 6.7<br />Species: virginica","Petal.Length: 5.0<br />Sepal.Length: 6.3<br />Species: virginica","Petal.Length: 5.2<br />Sepal.Length: 6.5<br />Species: virginica","Petal.Length: 5.4<br />Sepal.Length: 6.2<br />Species: virginica","Petal.Length: 5.1<br />Sepal.Length: 5.9<br />Species: virginica"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(97,156,255,1)","opacity":1,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(97,156,255,1)"}},"hoveron":"points","name":"virginica","legendgroup":"virginica","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":27.765601217656,"r":7.30593607305936,"b":41.7199391171994,"l":31.4155251141553},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.705,7.195],"tickmode":"array","ticktext":["2","4","6"],"tickvals":[2,4,6],"categoryorder":"array","categoryarray":["2","4","6"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Petal.Length","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[4.12,8.08],"tickmode":"array","ticktext":["5","6","7","8"],"tickvals":[5,6,7,8],"categoryorder":"array","categoryarray":["5","6","7","8"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Sepal.Length","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"title":{"text":"Species","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"15c2d69daee81":{"x":{},"y":{},"colour":{},"type":"scatter"},"15c2d24608d72":{"x":{},"y":{},"colour":{}}},"cur_data":"15c2d69daee81","visdat":{"15c2d69daee81":["function (y) ","x"],"15c2d24608d72":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-70ea7ec91f18672ca3bb">{"viewer":{"width":"100%","height":400,"padding":0,"fill":true},"browser":{"width":"100%","height":400,"padding":0,"fill":true}}</script>
+
+	</body>
+
+</html>
