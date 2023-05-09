@@ -18,23 +18,11 @@
 		<!--default to open links in current tab-->
 		<base target="_self"> 	
 		
-		<!--asset files-->
+		<!--highlgiht.js stuff-->
 		<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css"/>
 		<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
 		<!--<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/python.min.js"></script>-->
 		<script>hljs.highlightAll();</script>
-
-		<link rel="stylesheet" href="assets/imgs/academicons/css/academicons.css"/>
-		<link rel="stylesheet" href="assets/style.css"/>
-		<script src="assets/script.js"></script>
-
-		<!--Embeded logos-->
-		<script src="https://use.fontawesome.com/d4bd914e04.js" async></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
-		<!--favicon-->
-		<link rel="icon" type="image/png" href="assets/imgs/logos/logo.png">
-		<link rel="apple-touch-icon" href="assets/imgs/logos/logo.png">
 
 		<!--plotly stuff-->
 		<script src="assets/r_dependencies/htmlwidgets-1.6.1/htmlwidgets.js"></script>
@@ -45,6 +33,22 @@
 		<script src="assets/r_dependencies/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 		<link href="assets/r_dependencies/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
 		<script src="assets/r_dependencies/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+		<!--leaflet stuff-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+
+		<!--logos-->
+		<link rel="stylesheet" href="assets/imgs/academicons/css/academicons.css"/>
+		<script src="https://use.fontawesome.com/d4bd914e04.js" async></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<!--favicon-->
+		<link rel="icon" type="image/png" href="assets/imgs/logos/logo.png">
+		<link rel="apple-touch-icon" href="assets/imgs/logos/logo.png">
+
+		<!--custom css-->
+		<link rel="stylesheet" href="assets/style.css"/>
+		<script src="assets/script.js"></script>
 	</head>
 
 	<body class="onecol">
@@ -93,13 +97,13 @@
 
 					<p style="margin: 0;">Here I offer a brief, but accurate, statement of the facts and my basic assumptions.</p>
 
-					<br>
+					<br><br>
 
 					<h1 id="problem_statement">Problem</h1>
 
 					<p style="margin: 0;">Now, I state clearly the problem we face given the current context. I might even wax poetic, to a degree, to stretch the length of this example paragraph a bit longer. There, that looks better.</p>
 
-					<br>
+					<br><br>
 
 					<h1 id="recommendation">Recommendation</h1>
 
@@ -119,44 +123,64 @@
 
 					<p style="margin: 0;">Add some details about data used here, brief idea of the methods, and then some interactive figures (if possible). Probably using R and plotly.</p>
 
-						<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-70ea7ec91f18672ca3bb" style="width:100%;height:400px;"></div>
+					<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-70ea7ec91f18672ca3bb" style="width:95%;height:400px;"></div>
 
-					<br>
+					<p>If needed, we can also add an interactive leaflet map to the mix.</p>
+					
+					<div id="map" style="width:95%;height:400px;"></div>
+					<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+					<script>
+						var mapOptions = {center:[49.7565295, -123.3399995], zoom:10}
+						var map = L.map('map',mapOptions);
+						// Creating a Layer object
+						var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'});
+						// Adding layer to the map
+						map.addLayer(layer);
+					</script>
+
+					<br><br>
 
 					<h1 id="appendix">Appendix</h1>
 
-					<h2 id="appendix_methods">Methods</h2>
+					<h2 id="appendix_methods">Methods & Code</h2>
 
-					<p style="margin: 0;">Here will be the meat of the code. I will detail my assumptions once more, <a class="cite" href="research.html">cite sources</a> as needed, and provide chunks of code like so:
+					<p style="margin: 0;">Here will be the meat of the code. I will detail my assumptions once more, <a class="cite" href="research.html">cite sources</a> as needed, and provide chunks of code. For example, the following code produced the interactive scatterplot and saved it in an html-ready format:
 
 					<pre>
-<code class="language-r" data-lang="r">render_plotly_html <- function(p) {
-  p %>%
-    plotly::as_widget() %>%
-    list() %>%
-    htmltools::tagList()
+<code class="language-r" data-lang="r">library(ggplot2)
+library(plotly)
+library(tibble)
+
+# get the data and fit a loess model
+mod <- loess(Petal.Length ~ Sepal.Length, data = iris)
+
+# use the model to predict values along equally spaced points
+grid <- tibble(Sepal.Length = seq(min(iris$Sepal.Length),max(iris$Sepal.Length), length=50))
+grid$Petal.Length <- predict(mod, newdata=grid)
+
+# plot the data
+p <- iris %>%
+    ggplot(aes(Petal.Length, Sepal.Length, color=Species)) +
+    geom_line(data = grid, colour = "black", linewidth = 1, linetype=1) + # use the model predicted values to create a summary line of the scatterplot
+    geom_point()
+
+# convert ggplot to plotly & save
+htmlwidgets::saveWidget(ggplotly(p), file="html_file_path", selfcontained = FALSE, libdir="path_to_dependencies_folder")
 }</code></pre>
 
 					</p>
 
-					<p>Previously, I used computational models combined with measures of brain, muscle, and behavioural data to <a class="cite" href="research.html">research</a> how we sense and interact with our world through movement. As part of this, I helped develop <a class="cite" href="research.html#stats">novel statistical methods</a> to analyze brain data.</p>
+					<p>As a second example, below is the javacsript code for the leaflet plot:</p>
 
 					<pre>
-<code>@requires_authorization(roles=["ADMIN"])
-def somefunc(param1='', param2=0):
-    r'''A docstring'''
-    if param1 > param2: # interesting
-        print 'Gre\'ater'
-    return (param2 - param1 + 1 + 0b10l) or None
-
-class SomeClass:
-    pass
-
->>> message = '''interpreter
-... prompt'''
+<code class="langugage-js" data-lang="js">var mapOptions = {center:[49.7565295, -123.3399995], zoom:10}
+var map = L.map('map',mapOptions);
+// Creating a Layer object
+var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'});
+// Adding layer to the map
+map.addLayer(layer);
 </code></pre>
 
-					<p>You can find my contact information <a class="cite" href="about.html#contact">here</a>.</p>
 				</p>
 			</div>
 			<br>
