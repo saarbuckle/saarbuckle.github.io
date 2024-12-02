@@ -151,6 +151,9 @@ strong{
 	color: var(--color-text-strong);
 }
 
+span.weak{
+	color: rgb(130,130,130,1);
+}
 span.togglePre{
 	cursor: help; 
 	font-style: normal;
