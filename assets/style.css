@@ -320,4 +320,21 @@ a.icon:hover {
 	}
 }*/
 
+/*----------*/
+/*  Pubs.   */
+/*----------*/
+ 
+/* Base publication entry styling */
+.publication {
+    border-left: 3px solid #ccc;
+    padding-left: 1em;
+    margin-bottom: 1.75em;
+}
 
+.publication:hover {
+    border-left-color: #888;
+}
+ 
+.publication.first-author {
+    border-left-color: #4a90a4; 
+}
