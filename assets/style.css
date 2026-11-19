@@ -169,7 +169,7 @@ span.togglePost{
 	/*background-color: rgb(164,164,164,0.4);*/
 }
 
-h.masthead {
+.masthead {
 	color: 	var(--color-text-masthead);
 	text-align: center;
 	font-size: 2em;
@@ -182,7 +182,7 @@ h.masthead {
 	text-decoration: underline 0.1em rgba(255,215,0, 0);
   transition: all var(--transition-time) ease 0s;
 }
-h.masthead:hover{
+.masthead:hover{
 	color: var(--color-text-masthead);
 	text-decoration: underline;
 	text-decoration-color: var(--color-btn-text-hover);
