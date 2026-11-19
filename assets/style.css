@@ -142,31 +142,12 @@ img {
 /*----------*/
 /*  TEXT    */
 /*----------*/
-p.reg {
-	font-size: 1em;
-	color: var(--color-text-p);
-	text-align: left;	
-	text-decoration: none;
-}
 strong{
 	color: var(--color-text-strong);
 }
 
 span.weak{
 	color: rgb(130,130,130,1);
-}
-span.togglePre{
-	cursor: help; 
-	font-style: normal;
-	text-decoration: underline;
-	text-decoration-color: silver;
-	text-decoration-style: solid;
-}
-span.togglePost{
-	color: rgb(130,130,130,1);
-	display: none;
-	font-style: italic;
-	/*background-color: rgb(164,164,164,0.4);*/
 }
 
 .masthead {
